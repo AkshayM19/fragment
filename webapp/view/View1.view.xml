@@ -1,0 +1,37 @@
+<mvc:View controllerName="demofragment.demofragment.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+	<layout:Grid defaultSpan="L12 M12 S12">
+		<layout:content>
+			<form:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanM="12" labelSpanL="12" labelSpanXL="12" emptySpanL="6" emptySpanM="6">
+			  <form:content>
+			
+						<Button text ="click for viewing Fragment"
+						        width = "260px"
+						        press= "openFragment">
+							
+						</Button>
+						
+						
+			
+						<Label text="Animals" />	
+					<Input
+						id="inputId1"
+						showValueHelp="true"
+						valueHelpOnly="true"
+						valueHelpRequest=".openFragment"
+						 width = "220px"></Input>
+				
+					<Label text="Places" />	
+					<Input
+						id="input2"
+						showValueHelp="true"
+						valueHelpOnly="true"
+						valueHelpRequest=".openFragment"
+						 width = "220px"></Input>
+				
+						</form:content>
+			</form:SimpleForm>
+		</layout:content>
+	</layout:Grid>
+	
+</mvc:View>
